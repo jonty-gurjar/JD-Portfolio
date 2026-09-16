@@ -1,0 +1,255 @@
+
+@import "tailwindcss";
+
+@font-face {
+  font-family: "satoshi";
+  src: url("./Fonts/Satoshi-Regular.woff2");
+}
+
+h1,
+h3 {
+  font-family: "Staatliches", sans-serif;
+}
+h2,
+span {
+  font-family: "Stint Ultra Condensed", serif;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+h4,li {
+  font-family: "satoshi";
+}
+
+.projectPreview {
+  --moveX: 100%;
+  clip-path: inset(0 0 0 var(--moveX));
+}
+
+.char-v1 {
+  will-change: transform, opacity;
+  transform-style: preserve-3d;
+  display: inline-block;
+}
+
+.char-v1.font-staat {
+  font-family: "Staatliches", sans-serif !important;
+  font-weight: normal;
+}
+
+.char-v1.font-condensed {
+  font-family: "Stint Ultra Condensed", serif !important;
+  font-weight: 100;
+}
+
+/* MorphedMenu (Mobile Animated Navigation) */
+.morphed-menu-box {
+  backdrop-filter: blur(28px) saturate(190%);
+  -webkit-backdrop-filter: blur(28px) saturate(190%);
+}
+
+.morphed-nav-item {
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+}
+
+.morphed-btn-inner {
+  display: flex;
+  flex-direction: column;
+  height: 200%;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.morphed-btn-inner.is-open {
+  transform: translateY(-50%);
+}
+
+/* ========================================================
+   HOVER SLIDER ANIMATED SLIDESHOW (TECH STACK & SERVICES)
+   ======================================================== */
+.hover-slider-section {
+  position: relative;
+  background: radial-gradient(circle at 50% 30%, rgba(201, 100, 66, 0.08) 0%, rgba(13, 15, 14, 0) 70%), #0d0f0e;
+}
+
+.hover-slider-card {
+  background: rgba(22, 26, 24, 0.65);
+  backdrop-filter: blur(24px) saturate(160%);
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.hover-slider-img-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.hover-slider-img-wrap > * {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.hover-slider-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0px);
+  opacity: 0;
+  transition: clip-path 0.75s cubic-bezier(0.33, 1, 0.68, 1), opacity 0.4s ease, transform 0.8s cubic-bezier(0.33, 1, 0.68, 1);
+  transform: scale(1.05);
+  pointer-events: none;
+}
+
+.hover-slider-img.is-active {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+.text-stagger-hover {
+  position: relative;
+  display: inline-flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  cursor: pointer;
+  transform-origin: bottom;
+  user-select: none;
+  font-family: "Staatliches", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.text-stagger-char {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.text-stagger-char .char-base {
+  display: inline-block;
+  opacity: 0.3;
+  transform: translateY(0%);
+  transition: transform 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.32s ease, color 0.32s ease;
+  color: #9ca3af;
+}
+
+.text-stagger-char .char-active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  opacity: 1;
+  transform: translateY(110%);
+  transition: transform 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  color: #ffffff;
+}
+
+.text-stagger-hover.is-active .text-stagger-char .char-base {
+  transform: translateY(-110%);
+  opacity: 0.1;
+}
+
+.text-stagger-hover.is-active .text-stagger-char .char-active {
+  transform: translateY(0%);
+  color: #ffffff;
+}
+
+.text-stagger-hover:hover .text-stagger-char .char-base {
+  opacity: 0.6;
+  color: #e5e7eb;
+}
+
+/* ========================================================
+   TAG SPHERE (TECH STACK)
+   ======================================================== */
+.tag-sphere-tw-scene {
+  touch-action: none;
+}
+.tag-sphere-tw-scene:focus-visible {
+  box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--tag-sphere-accent, #ff4d2e) 60%, transparent);
+}
+.tag-sphere-tw-tag {
+  color: #f4f1ea;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  transition: color 0.15s ease, text-shadow 0.15s ease;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.tag-sphere-tw-tag:hover,
+.tag-sphere-tw-tag:focus-visible {
+  color: var(--tag-sphere-accent, #ff4d2e);
+  outline: none;
+  text-shadow: 0 0 16px color-mix(in srgb, var(--tag-sphere-accent, #ff4d2e) 90%, transparent);
+}
+.tag-sphere-tw-tag:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tag-sphere-tw-tag { transition: none; }
+}
+
+/* ========================================================
+   NAV LINKS ROLLING TEXT CLIPPING
+   ======================================================== */
+.links {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.links > h3,
+.links > h2 {
+  flex-shrink: 0;
+  display: block;
+}
+
+/* ========================================================
+   STICKY SCROLL REVEAL (EDUCATION)
+   ======================================================== */
+.sticky-scroll-container {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.25) transparent;
+}
+.sticky-scroll-container::-webkit-scrollbar {
+  width: 4px;
+}
+.sticky-scroll-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.sticky-scroll-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 9999px;
+}
+.sticky-scroll-card-item {
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.sticky-scroll-preview-img {
+  transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1), transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ========================================================
+   STATS SECTION (ABOUT) TYPOGRAPHY
+   ======================================================== */
+.stat-val h3,
+.stat-val span,
+.stat-counter {
+  font-family: "Staatliches", sans-serif !important;
+  font-weight: 700 !important;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+.stat-card h4 {
+  font-family: "satoshi", sans-serif !important;
+  font-weight: 700 !important;
+}
+

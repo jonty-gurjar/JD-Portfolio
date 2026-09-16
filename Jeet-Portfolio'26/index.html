@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./Images/favicon (3).png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Stint+Ultra+Condensed&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <title>Jeet-Portfolio'26</title>
+</head>
+
+<body>
+
+  <main>
+    <div class="loader pointer-events-none h-screen w-full fixed top-0 left-0 z-[700]">
+      <div class="namaste text-center absolute z-[5] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+        <h2 class="text-white text-[7.5vw] md:text-[3vw] leading-[1.3]">
+          नमस्ते
+        </h2>
+        <h3 class="text-white text-[5vw] md:text-[2vw] leading-[1]">
+          namaste
+        </h3>
+      </div>
+      <div
+        class="loadingtext opacity-0 text-center absolute z-[5] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+        <h2 class="counter text-white text-[5.5vw] md:text-[2vw] leading-[1.2]">
+          0%
+        </h2>
+        <h3 class="text-white text-[6vw] md:text-[2.5vw] leading-[1.1] mt-[1.5vw] md:mt-[0.8vw]">
+          Designed. Coded. Loved.<span> By Jeet Dhabhai.</span>
+        </h3>
+        <div class="underline h-[0.8vw] md:h-[0.2vw] w-[0%] bg-white"></div>
+      </div>
+      <div class="overlay h-full w-full absolute top-0 left-0 z-[2] flex">
+        <div class="colordiv h-full w-[20%] bg-[#242A23]"></div>
+        <div class="colordiv h-full w-[20%] bg-[#242A23]"></div>
+        <div class="colordiv h-full w-[20%] bg-[#242A23]"></div>
+        <div class="colordiv h-full w-[20%] bg-[#242A23]"></div>
+        <div class="colordiv h-full w-[20%] bg-[#242A23]"></div>
+      </div>
+    </div>
+    <div class="projects-overlay hidden h-screen w-full fixed pointer-event-none top-0 left-0 z-[400]">
+      <div
+        class="infoverview flex md:flex-row flex-col px-[2vw] md:px-[1.5vw] py-[4vw] md:py-[2vw] h-full w-full absolute top-0 left-0 z-[2]">
+        <div class="left-part h-[48%] md:h-full w-full md:w-[44%]">
+          <div
+            class="buttondiv w-fit closeBtn border border-white cursor-pointer px-[3vw] md:px-[2vw] py-[1.5vw] md:py-[0.65vw]">
+            <div class="links cursor-pointer h-[1rem] md:h-[1.3rem] overflow-hidden">
+              <h2 class="text-white text-[4vw] md:text-[1.3vw] leading-[1]">
+                Return To home
+              </h2>
+              <h2 class="text-white text-[4vw] md:text-[1.3vw] leading-[1]">
+                Return To home
+              </h2>
+            </div>
+          </div>
+          <div class="heading mt-[2.5vw] md:mt-[1.5vw]">
+            <h3 class="projecttitle text-[14vw] md:text-[7.6vw] leading-[1] text-white">
+              VITALA - WELLNESS
+            </h3>
+            <div class="subheading flex items-center gap-[3vw] md:gap-[2vw]">
+              <div class="year">
+                <h2 class="projectyear text-white text-[4vw] leading-[1.1] md:text-[2vw]">
+                  2026
+                </h2>
+              </div>
+              <div class="shortdescription">
+                <h4 class="projectshorttag text-white text-[3vw] leading-[1] md:text-[1.3vw]">
+                  Premium wellness, health & longevity platform.
+                </h4>
+              </div>
+            </div>
+            <div class="livelink mt-[3vw] md:mt-[1vw]">
+              <a target="_blank" href="">
+                <div
+                  class="buttondiv w-fit border border-white cursor-pointer px-[3vw] md:px-[2vw] py-[1.5vw] md:py-[0.65vw] bg-[#242A23]">
+                  <div class="links cursor-pointer h-[1rem] overflow-hidden">
+                    <h2 class="text-white text-[4vw] md:text-[1.3vw] leading-[1]">
+                      live link
+                    </h2>
+                    <h2 class="text-white text-[4vw] md:text-[1.3vw] leading-[1]">
+                      live link
+                    </h2>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="projectflip mt-[2.7vw] md:mt-[1.5vw] h-[55%] w-full">
+            <div class="project-img overflow-hidden h-full w-full"></div>
+          </div>
+        </div>
+        <div class="right-part h-[52%] md:h-full flex items-end w-full md:w-[56%]">
+          <div class="right-part-wrapper px-[2vw]">
+            <div class="description">
+              <h2 class="text-white text-[5.5vw] md:text-[2.5vw]">
+                description
+              </h2>
+              <h4 class="text-[2.5vw] md:text-[1.2vw] mt-[1.3vw] text-white leading-[1.2]">
+                Vitala is a modern wellness platform designed to bring health, fitness, nutrition, mindfulness, and
+                recovery into one calming digital experience. The website focuses on a clean editorial-style interface
+                with immersive visuals, smooth interactions, and responsive layouts. I built the experience to feel
+                premium and engaging while keeping navigation simple and intuitive. The project helped me explore modern
+                frontend development, responsive design, animations, reusable components, and interactive
+                wellness-focused sections.
+              </h4>
+            </div>
+            <div
+              class="techstackandhighlights mt-[4vw] md:mt-[2vw] h-[25vh] md:h-[20vh] w-full flex md:flex-row flex-col">
+              <div class="techstack flex flex-row md:flex-col justify-between h-[50%] md:h-full w-full md:w-[35%]">
+                <h2 class="text-white text-[4.5vw] md:text-[1.8vw]">
+                  tech Stack
+                </h2>
+                <div class="tech flex mt-[1.5vw] flex-col gap-[0.2vw]">
+                  <h4 class="text-white text-[2.5vw] md:text-[0.8vw] leading-[1.1]">
+                    HTML
+                  </h4>
+                  <h4 class="text-white text-[2.5vw] md:text-[0.8vw] leading-[1.1]">
+                    Tailwind CSS
+                  </h4>
+                  <h4 class="text-white text-[2.5vw] md:text-[0.8vw] leading-[1.1]">
+                    Framer Motion
+                  </h4>
+                  <h4 class="text-white text-[2.5vw] md:text-[0.8vw] leading-[1.1]">
+                    React.js
+                  </h4>
+                </div>
+              </div>
+              <div class="highlights flex flex-row md:flex-col justify-between h-[50%] md:h-full w-full w-[65%]">
+                <h2 class="text-white text-[4.5vw] md:text-[1.8vw]">
+                  highlights
+                </h2>
+                <div class="tech flex mt-[1.5vw] flex-col gap-[1vw] md:gap-[0.4vw]">
+                  <h4 class="text-white text-[2.5vw] md:text-[1vw] leading-[1.1]">
+                    Premium wellness-focused visual design
+                  </h4>
+                  <h4 class="text-white text-[2.5vw] md:text-[1vw] leading-[1.1]">
+                    Smooth scroll and section animations
+                  </h4>
+                  <h4 class="text-white text-[2.5vw] md:text-[1vw] leading-[1.1]">
+                    Fitness, nutrition, mindfulness & recovery sections
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projectoverlay h-full w-full absolute top-0 left-0 flex">
+        <div class="colordivs h-full w-[20%] bg-[#242A23]"></div>
+        <div class="colordivs h-full w-[20%] bg-[#242A23]"></div>
+        <div class="colordivs h-full w-[20%] bg-[#242A23]"></div>
+        <div class="colordivs h-full w-[20%] bg-[#242A23]"></div>
+        <div class="colordivs h-full w-[20%] bg-[#242A23]"></div>
+      </div>
+    </div>
+    <nav
+      class="navbar px-[2vw] md:px-[1.5vw] h-[10vh] md:h-[16vh] w-full fixed z-[100] top-0 left-0 flex items-center justify-between">
+      <div class="name flex flex-col">
+        <div class="fullName">
+          <h3 class="text-[6vw] md:text-[2.3vw] leading-[1] text-white">
+            Jeet Dhabhai
+          </h3>
+        </div>
+        <div class="year">
+          <h2 class="text-[4.2vw] md:text-[1.6vw] text-white leading-[1]">
+            Portfolio'26
+          </h2>
+        </div>
+      </div>
+      <div class="mobilenav md:hidden flex items-center gap-3">
+        <!-- Morphed Menu Component -->
+        <div id="morphed-menu-container" class="relative z-[500]" style="width: 92px; height: 40px;">
+          <!-- Morphing Menu Panel -->
+          <div id="as-animated-menu-box"
+            class="morphed-menu-box absolute top-0 right-0 overflow-hidden z-[10] flex flex-col justify-between"
+            style="width: 92px; height: 40px; border-radius: 24px; background-color: #0d0f0d; border: 1px solid rgba(255, 255, 255, 0.15); box-shadow: 0 24px 48px rgba(0,0,0,0.7); pointer-events: none; opacity: 0; transform-origin: top right;">
+
+            <!-- Main Nav Links -->
+            <div class="morphed-nav-links flex flex-col gap-3 pl-7 pr-6 pt-16">
+              <div class="morphed-link-wrapper" style="perspective: 200px; perspective-origin: bottom;">
+                <div class="morphed-nav-item flex items-center gap-2.5 cursor-pointer group py-1" data-target="#about">
+                  <svg
+                    class="morphed-arrow transition-all duration-300 w-0 group-hover:w-8 group-active:w-8 overflow-hidden flex-shrink-0"
+                    height="22" viewBox="0 0 105 62" fill="none">
+                    <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#FFFFFF" stroke-width="4"
+                      vector-effect="non-scaling-stroke" />
+                  </svg>
+                  <span
+                    class="text-white text-3xl font-medium tracking-tight group-hover:translate-x-1 transition-transform">About</span>
+                </div>
+              </div>
+
+              <div class="morphed-link-wrapper" style="perspective: 200px; perspective-origin: bottom;">
+                <div class="morphed-nav-item flex items-center gap-2.5 cursor-pointer group py-1"
+                  data-target="#projects">
+                  <svg
+                    class="morphed-arrow transition-all duration-300 w-0 group-hover:w-8 group-active:w-8 overflow-hidden flex-shrink-0"
+                    height="22" viewBox="0 0 105 62" fill="none">
+                    <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#FFFFFF" stroke-width="4"
+                      vector-effect="non-scaling-stroke" />
+                  </svg>
+                  <span
+                    class="text-white text-3xl font-medium tracking-tight group-hover:translate-x-1 transition-transform">Projects</span>
+                </div>
+              </div>
+
+              <div class="morphed-link-wrapper" style="perspective: 200px; perspective-origin: bottom;">
+                <div class="morphed-nav-item flex items-center gap-2.5 cursor-pointer group py-1" data-target="#cover">
+                  <svg
+                    class="morphed-arrow transition-all duration-300 w-0 group-hover:w-8 group-active:w-8 overflow-hidden flex-shrink-0"
+                    height="22" viewBox="0 0 105 62" fill="none">
+                    <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#FFFFFF" stroke-width="4"
+                      vector-effect="non-scaling-stroke" />
+                  </svg>
+                  <span
+                    class="text-white text-3xl font-medium tracking-tight group-hover:translate-x-1 transition-transform">Certificates</span>
+                </div>
+              </div>
+
+              <div class="morphed-link-wrapper" style="perspective: 200px; perspective-origin: bottom;">
+                <div class="morphed-nav-item flex items-center gap-2.5 cursor-pointer group py-1"
+                  data-target="#techStack">
+                  <svg
+                    class="morphed-arrow transition-all duration-300 w-0 group-hover:w-8 group-active:w-8 overflow-hidden flex-shrink-0"
+                    height="22" viewBox="0 0 105 62" fill="none">
+                    <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#FFFFFF" stroke-width="4"
+                      vector-effect="non-scaling-stroke" />
+                  </svg>
+                  <span
+                    class="text-white text-3xl font-medium tracking-tight group-hover:translate-x-1 transition-transform">Tech
+                    Stack</span>
+                </div>
+              </div>
+
+              <div class="morphed-link-wrapper" style="perspective: 200px; perspective-origin: bottom;">
+                <div class="morphed-nav-item flex items-center gap-2.5 cursor-pointer group py-1"
+                  data-target="#education">
+                  <svg
+                    class="morphed-arrow transition-all duration-300 w-0 group-hover:w-8 group-active:w-8 overflow-hidden flex-shrink-0"
+                    height="22" viewBox="0 0 105 62" fill="none">
+                    <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#FFFFFF" stroke-width="4"
+                      vector-effect="non-scaling-stroke" />
+                  </svg>
+                  <span
+                    class="text-white text-3xl font-medium tracking-tight group-hover:translate-x-1 transition-transform">Education</span>
+                </div>
+              </div>
+
+              <div class="morphed-link-wrapper" style="perspective: 200px; perspective-origin: bottom;">
+                <div class="morphed-nav-item flex items-center gap-2.5 cursor-pointer group py-1"
+                  data-target="#contact">
+                  <svg
+                    class="morphed-arrow transition-all duration-300 w-0 group-hover:w-8 group-active:w-8 overflow-hidden flex-shrink-0"
+                    height="22" viewBox="0 0 105 62" fill="none">
+                    <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#FFFFFF" stroke-width="4"
+                      vector-effect="non-scaling-stroke" />
+                  </svg>
+                  <span
+                    class="text-white text-3xl font-medium tracking-tight group-hover:translate-x-1 transition-transform">Contact</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer / Social Links -->
+            <div
+              class="morphed-footer-links grid grid-cols-2 gap-y-3 gap-x-4 pl-7 pr-6 pb-6 pt-4 border-t border-white/10">
+              <div class="relative w-fit group">
+                <a target="_blank" href="https://www.linkedin.com/in/jd-jeet/"
+                  class="text-neutral-300 text-sm font-medium hover:text-white transition-colors">LinkedIn</a>
+                <span
+                  class="absolute left-0 bottom-0 w-0 h-[1.5px] bg-white transition-all duration-300 group-hover:w-full"></span>
+              </div>
+              <div class="relative w-fit group">
+                <a target="_blank" href="mailto:jeetdhabhai18@gmail.com"
+                  class="text-neutral-300 text-sm font-medium hover:text-white transition-colors">Email</a>
+                <span
+                  class="absolute left-0 bottom-0 w-0 h-[1.5px] bg-white transition-all duration-300 group-hover:w-full"></span>
+              </div>
+              <div class="relative w-fit group">
+                <a href="./public/Jeet Dhabhai Resume.pdf" download="Jeet Dhabhai Resume.pdf"
+                  class="text-neutral-300 text-sm font-medium hover:text-white transition-colors">Resume ↗</a>
+                <span
+                  class="absolute left-0 bottom-0 w-0 h-[1.5px] bg-white transition-all duration-300 group-hover:w-full"></span>
+              </div>
+              <div class="relative w-fit group">
+                <a href="mailto:jeetdhabhai18@gmail.com?subject=Hire%20You"
+                  class="text-neutral-300 text-sm font-medium hover:text-white transition-colors">Hire Me</a>
+                <span
+                  class="absolute left-0 bottom-0 w-0 h-[1.5px] bg-white transition-all duration-300 group-hover:w-full"></span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Menu Button Trigger -->
+          <button id="morphed-menu-btn"
+            class="relative z-[20] w-[92px] h-[40px] rounded-full overflow-hidden border border-white/30 cursor-pointer p-0 bg-transparent transition-transform active:scale-95"
+            aria-label="Toggle menu" aria-expanded="false">
+            <div class="morphed-btn-inner relative w-full h-full">
+              <!-- Closed State: MENU -->
+              <div
+                class="btn-state-closed flex items-center justify-center w-full h-full bg-[#181A18] text-white font-medium text-xs tracking-wider uppercase select-none">
+                <span>MENU</span>
+              </div>
+              <!-- Open State: CLOSE -->
+              <div
+                class="btn-state-open flex items-center justify-center w-full h-full bg-white text-black font-semibold text-xs tracking-wider uppercase select-none">
+                <span>CLOSE</span>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="navlinks hidden md:flex items-center w-[44%] lg:w-[40%] justify-between">
+        <div id="aboutlink" class="links cursor-pointer h-[1.25vw] overflow-hidden flex flex-col">
+          <h3 class="text-white text-[1.15vw] leading-[1.25vw] h-[1.25vw] shrink-0">About</h3>
+          <h3 class="text-white text-[1.15vw] leading-[1.25vw] h-[1.25vw] shrink-0">About</h3>
+        </div>
+        <div id="projectlink" class="links cursor-pointer h-[1.25vw] overflow-hidden flex flex-col">
+          <h3 class="text-white text-[1.15vw] leading-[1.25vw] h-[1.25vw] shrink-0">Projects</h3>
+          <h3 class="text-white text-[1.15vw] leading-[1.25vw] h-[1.25vw] shrink-0">Projects</h3>
+        </div>
+        <div id="recolink" class="links cursor-pointer h-[1.25vw] overflow-hidden flex flex-col">
+          <h3 class="text-white text-[1.15vw] leading-[1.25vw] h-[1.25vw] shrink-0">Certificates</h3>
+          <h3 class="text-white text-[1.15vw] leading-[1.25vw] h-[1.25vw] shrink-0">Certificates</h3>
+        </div>
+        <div id="techstacklink" class="links cursor-pointer h-[1.25vw] overflow-hidden flex flex-col">
+          <h3 class="text-white text-[1.15vw] leading-[1.25vw] h-[1.25vw] shrink-0">Tech Stack</h3>
+          <h3 class="text-white text-[1.15vw] leading-[1.25vw] h-[1.25vw] shrink-0">Tech Stack</h3>
+        </div>
+        <div id="educationlink" class="links cursor-pointer h-[1.25vw] overflow-hidden flex flex-col">
+          <h3 class="text-white text-[1.15vw] leading-[1.25vw] h-[1.25vw] shrink-0">Education</h3>
+          <h3 class="text-white text-[1.15vw] leading-[1.25vw] h-[1.25vw] shrink-0">Education</h3>
+        </div>
+        <div id="contactlink" class="links cursor-pointer h-[1.25vw] overflow-hidden flex flex-col">
+          <h3 class="text-white text-[1.15vw] leading-[1.25vw] h-[1.25vw] shrink-0">Contact</h3>
+          <h3 class="text-white text-[1.15vw] leading-[1.25vw] h-[1.25vw] shrink-0">Contact</h3>
+        </div>
+      </div>
+    </nav>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <div id="app " class="bg-[#242A23]">
+          <div class="page1 h-[200vh] w-full relative">
+            <div class="image-div h-screen overflow-hidden w-full">
+              <!-- Desktop Hero Background -->
+              <img data-speed="0.91" class="scaleImage hidden md:block h-screen w-full scale-[1.16] object-cover"
+                data-src="./Images/bg-hero.png" alt="Hero background" />
+              <!-- Mobile Hero Background -->
+              <img data-speed="0.91" class="scaleImage block md:hidden h-screen w-full scale-[1.16] object-cover"
+                data-src="./Images/bg-hero-mobile.png" alt="Hero background mobile" />
+            </div>
+            <div class="upperdiv px-[2vw] md:px-[1.5vw] h-full w-full absolute top-0 left-0">
+              <div class="landing-div py-[1.5vw] flex items-end h-screen w-full">
+                <div
+                  class="bottomtext w-full pb-[6vw] md:pb-[0vw] flex md:flex-row flex-col items-stretch justify-between">
+                  <div class="maintext mb-[2.1vw] md:mb-[0vw] overflow-hidden">
+                    <h1 class="md:text-[7vw] text-[12vw] leading-[0.9] text-white">
+                      Hi, I'm <span>Jeet Dhabhai</span><br />
+                      Frontend Developer.
+                    </h1>
+                  </div>
+                  <div class="subtext w-[90%] md:w-[32%] flex flex-col justify-between">
+                    <div class="uppertext">
+                      <h4 class="text-white text-[3.5vw] md:text-[1.17vw] leading-[1.05]">
+                        A designer who codes and a developer who designs. I create interactive digital experiences where
+                        design meets clean code. From responsive layouts to smooth animations and thoughtful
+                        interactions, I build websites that don’t just look good — they feel alive.
+
+                      </h4>
+                      <h3 class="alagtext text-white text-[6vw] md:text-[2.5vw] leading-[1.1] mt-[2.5vw] md:mt-[0.8vw]">
+                        design that moves <span>code that performs.</span>
+                      </h3>
+                    </div>
+                    <div class="buttons flex mt-[2.5vw] md:mt-[0vw] gap-[3vw] md:gap-[1.5vw]">
+                      <a href="./public/Jeet Dhabhai Resume.pdf" download="Jeet_Dhabhai_Resume.pdf"
+                        class="buttondiv border border-white cursor-pointer px-[4vw] md:px-[2vw] py-[1.5vw] md:py-[0.65vw]">
+                        <div class="links cursor-pointer h-[1rem] md:h-[1.3rem] overflow-hidden">
+                          <h2 class="text-white text-[4vw] md:text-[1.3vw] leading-[1]">
+                            Resume Download
+                          </h2>
+                          <h2 class="text-white text-[4vw] md:text-[1.3vw] leading-[1]">
+                            Resume Download
+                          </h2>
+                        </div>
+                      </a>
+                      <a href="https://wa.me/+917000094972"
+                        class="buttondiv border border-white cursor-pointer px-[4vw] md:px-[2vw] py-[1.5vw] md:py-[0.65vw] bg-[#242A23]">
+                        <div class="links cursor-pointer h-[1rem] md:h-[1.3rem] overflow-hidden">
+                          <h2 class="text-white text-[4vw] md:text-[1.3vw] leading-[1]">
+                            Let's Talk
+                          </h2>
+                          <h2 class="text-white text-[4vw] md:text-[1.3vw] leading-[1]">
+                            Let's Talk
+                          </h2>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="about" class="about py-[1.5vw] h-screen flex flex-col justify-end w-full">
+                <div class="uppertext">
+                  <h3 class="text-[10vw] md:text-[5.7vw] leading-[1.2] text-white">
+                    About <span>Me</span>
+                  </h3>
+                </div>
+                <div class="mainAbout h-[85vh] md:h-[70vh] w-full flex md:flex-row flex-col justify-between">
+                  <div class="aboutimg overflow-hidden h-[40%] md:h-full w-full md:w-[65%]">
+                    <img data-speed="0.8" class="h-full scale-[1.1] w-full object-cover" data-src="./Images/AboutMe.png"
+                      alt="" />
+                  </div>
+                  <div
+                    class="abouttext py-[4.2vw] md:py-[0vw] md:h-full h-[60%] w-full md:w-[32%] flex flex-col justify-between">
+                    <div class="normalIntro flex flex-col gap-[2.5vw] md:gap-[1vw]">
+                      <h4 class="text-white leading-[1.25] text-[3.5vw] md:text-[1.23vw]">
+                        I am a dedicated Freelancer Frontend Developer specializing in creating highly customizable,
+                        responsive, and visually compelling websites. With a strong foundation in HTML, CSS, and
+                        JavaScrprit gained through hands-on experience, I bring both creativity and technical expertise
+                        to every project.
+
+                      </h4>
+                      <h4 class="text-white leading-[1.25] text-[3.5vw] md:text-[1.23vw]">
+                        Overcoming the challenges of being deaf from birth has shaped my unique perspective and strong
+                        problem-solving abilities. I focus on delivering high-quality, user-focused web solution while
+                        continuously learning and growing in a dynamic professional environment.
+
+                      </h4>
+
+                    </div>
+                    <!-- Stats Section (Framer StatsSection Component) -->
+                    <div id="about-stats-section"
+                      class="stats-section mt-3 md:mt-1 pt-3 md:pt-3 border-t border-white/30 w-full">
+                      <div class="grid grid-cols-3 gap-x-2 md:gap-x-4">
+
+                        <!-- Metric 1: Projects Completed -->
+                        <div class="stat-card flex flex-col items-start">
+                          <div class="stat-val flex items-baseline leading-none">
+                            <h3 class="text-white text-[7.5vw] md:text-[2.2vw] leading-none font-bold">
+                              <span class="stat-counter font-bold" data-target="27" data-decimals="0">0</span><span
+                                class="text-white font-bold">+</span>
+                            </h3>
+                          </div>
+                          <h4
+                            class="text-white font-bold text-[2.9vw] md:text-[0.95vw] leading-tight mt-1.5 tracking-normal">
+                            Projects Completed
+                          </h4>
+                        </div>
+
+                        <!-- Metric 2: Technologies Used -->
+                        <div class="stat-card flex flex-col items-start border-l border-white/10 pl-2 md:pl-3.5">
+                          <div class="stat-val flex items-baseline leading-none">
+                            <h3 class="text-white text-[7.5vw] md:text-[2.2vw] leading-none font-bold">
+                              <span class="stat-counter font-bold" data-target="10" data-decimals="0">0</span><span
+                                class="text-white font-bold">+</span>
+                            </h3>
+                          </div>
+                          <h4
+                            class="text-white font-bold text-[2.9vw] md:text-[0.95vw] leading-tight mt-1.5 tracking-normal">
+                            Technologies Used
+                          </h4>
+                        </div>
+
+                        <!-- Metric 3: Responsive Quality -->
+                        <div class="stat-card flex flex-col items-start border-l border-white/10 pl-2 md:pl-3.5">
+                          <div class="stat-val flex items-baseline leading-none">
+                            <h3 class="text-white text-[7.5vw] md:text-[2.2vw] leading-none font-bold">
+                              <span class="stat-counter font-bold" data-target="100" data-decimals="0">0</span><span
+                                class="text-white font-bold">%</span>
+                            </h3>
+                          </div>
+                          <h4
+                            class="text-white font-bold text-[2.9vw] md:text-[0.95vw] leading-tight mt-1.5 tracking-normal">
+                            Responsive & Quality
+                          </h4>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="projects" class="page2 projects relative h-[70vh] md:h-screen w-full">
+            <div class="image-div h-screen overflow-hidden w-full">
+              <img data-speed="0.5" class="h-screen w-full scale-[1] object-cover" data-src="./Images/Select Works.png"
+                alt="" />
+            </div>
+            <div
+              class="projectPreview absolute right-[1.5vw] top-[38%] translate-y-[-50%] h-[35%] md:h-[50%] w-full md:w-[44%] bg-red-300">
+              <div class="project-img h-full w-full">
+                <img class="h-full scale-[1.2] w-full object-cover" data-src="./Images/Wellness-Mockup.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="projectPreview absolute right-[1.5vw] top-[38%] translate-y-[-50%] h-[35%] md:h-[50%] w-full md:w-[44%] bg-green-300">
+              <div class="project-img h-full w-full">
+                <img class="h-full scale-[1.2] w-full object-cover" data-src="./Images/Aurex-Mockup.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="projectPreview absolute right-[1.5vw] top-[38%] translate-y-[-50%] h-[35%] md:h-[50%] w-full md:w-[44%] bg-blue-300">
+              <div class="project-img h-full w-full">
+                <img class="h-full scale-[1.2] w-full object-cover" data-src="./Images/Arrive-Mockup.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="projectPreview absolute right-[1.5vw] top-[38%] translate-y-[-50%] h-[35%] md:h-[50%] w-full md:w-[44%] bg-red-600">
+              <div class="project-img h-full w-full">
+                <img class="h-full scale-[1.2] w-full object-cover" data-src="./Images/Spotify-Mockup.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="upperdiv px-[2vw] md:px-[1.5vw] py-[1.5vw] flex flex-col justify-end h-full w-full absolute top-0 left-0">
+              <div class="heading">
+                <h3 class="text-white pb-[4vw] md:pb-[0vw] leading-[1.05] text-[10vw] md:text-[6vw]">
+                  Selected <span>Projects</span>
+                </h3>
+              </div>
+              <div
+                class="mainprojectsdiv h-[30vh] md:h-[20vh] flex md:flex-row flex-col items-start md:items-center justify-between w-full">
+                <div class="lefttext h-[40%] w-full md:w-[32%]">
+                  <h4 class="text-white text-[4vw] md:text-[1.23vw] leading-[1.25]">
+                    Every project I create has a story behind it. It's not
+                    just about “making a website.” It's about exploring an
+                    idea, experimenting, failing a few times, and then finally
+                    watching it come alive on screen.
+                  </h4>
+                </div>
+                <div
+                  class="projects flex h-[60%] md:h-full w-full md:w-[55%] items-center justify-start md:justify-end gap-[2.5vw] md:gap-[0.5vw]">
+                  <div class="projectBox cursor-pointer box1 h-[70%] w-[22%] md:w-[20%] bg-blue-400">
+                    <div class="project-img h-full w-full">
+                      <img class="h-full w-full object-cover" data-src="./Images/Wellness-Mockup.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="projectBox cursor-pointer box2 h-[70%] w-[22%] md:w-[20%] bg-blue-200">
+                    <div class="project-img h-full w-full">
+                      <img class="h-full w-full object-cover" data-src="./Images/Aurex-Mockup.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="projectBox cursor-pointer box3 h-[70%] w-[22%] md:w-[20%] bg-blue-400">
+                    <div class="project-img h-full w-full">
+                      <img class="h-full w-full object-cover" data-src="./Images/Arrive-Mockup.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="projectBox cursor-pointer box4 h-[70%] w-[22%] md:w-[20%] bg-blue-200">
+                    <div class="project-img h-full w-full">
+                      <img class="h-full w-full object-cover" data-src="./Images/Spotify-Mockup.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="cover" class="page3 relative h-[80vh] md:h-screen w-full">
+            <div class="image-div h-screen overflow-hidden w-full">
+              <img data-speed="0.6" class="h-screen w-full scale-[1] object-cover" data-src="./Images/CertificateMe.png"
+                alt="" />
+            </div>
+            <div
+              class="upperdiv px-[2vw] md:px-[1.5vw] py-[1.5vw] flex items-center justify-center h-full w-full absolute z-[20] top-0 left-0">
+              <div class="heading">
+                <h3 class="text-white text-center leading-[1.05] text-[10vw] md:text-[6vw]">
+                  Certification
+                </h3>
+              </div>
+            </div>
+            <div data-speed="0.86"
+              class="absolute top-[16%] md:top-[23%] left-[7%] md:left-[8%] w-[42vw] md:w-[25vw] h-[28vw] md:h-[22vw] movable">
+              <div class="upperImage h-[85%] md:h-[90%] w-full">
+                <img class="h-full w-full object-cover" data-src="./Images/Sheryians Certi 27.png" alt="" />
+              </div>
+              <div class="lowertext h-[15%] md:h-[10%] w-full flex items-center justify-center text-center">
+                <h3 class="text-white text-[2.7vw] md:text-[1.6vw]">
+                  Full-Stack Web Development
+                </h3>
+              </div>
+            </div>
+            <div data-speed="0.89"
+              class="absolute z-[25] top-[58%] md:top-[40%] right-[7%] md:right-[8%] w-[40vw] md:w-[24vw] h-[28vw] md:h-[20vw] movable">
+              <div class="upperImage h-[85%] md:h-[90%] w-full">
+                <img class="h-full w-full object-cover" data-src="./Images/Frontend.jpeg" alt="" />
+              </div>
+              <div class="lowertext h-[15%] md:h-[10%] w-full flex items-center justify-center text-center">
+                <h3 class="text-white text-[2.7vw] md:text-[1.6vw]">
+                  Frontend Developer
+                </h3>
+              </div>
+            </div>
+            <div data-speed="0.95"
+              class="absolute top-[8%] right-[7%] md:right-[35%] w-[38vw] md:w-[18vw] h-[26vw] md:h-[14vw] movable">
+              <div class="upperImage h-[85%] md:h-[90%] w-full">
+                <img class="h-full w-full object-cover" data-src="./Images/Sheryians Certi 6.png" alt="" />
+              </div>
+              <div class="lowertext h-[15%] md:h-[10%] w-full flex items-center justify-center text-center">
+                <h3 class="text-white text-[2.7vw] md:text-[1.4vw]">
+                  Sheryians Coding School
+                </h3>
+              </div>
+            </div>
+            <div data-speed="0.93"
+              class="absolute top-[68%] md:top-[60%] left-[7%] md:left-[35%] w-[38vw] md:w-[17vw] h-[26vw] md:h-[13vw] movable">
+              <div class="upperImage h-[85%] md:h-[90%] w-full">
+                <img class="h-full w-full object-cover" data-src="./Images/Webflow.jpeg" alt="" />
+              </div>
+              <div class="lowertext h-[15%] md:h-[10%] w-full flex items-center justify-center text-center">
+                <h3 class="text-white text-[2.7vw] md:text-[1.2vw]">
+                  Webflow
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div id="techStack" class="page3 techStack relative min-h-[85vh] md:h-screen w-full overflow-hidden">
+            <div class="image-div h-screen overflow-hidden w-full absolute inset-0 z-0">
+              <img data-speed="0.5" class="h-screen w-full scale-[1] object-cover" data-src="./Images/T-6.jpg"
+                alt="Tech Stack" />
+            </div>
+
+            <div
+              class="upperdiv px-[3vw] md:px-[2.5vw] py-[3vw] md:py-[2vw] flex flex-col justify-between h-full w-full absolute z-[20] top-0 left-0">
+              <!-- Header with Tag & Main Heading -->
+              <div
+                class="heading flex flex-col md:flex-row items-start md:items-end justify-between w-full mb-4 md:mb-6">
+                <div>
+                  <h3 class="text-white leading-[1] text-[9vw] md:text-[5vw] font-bold">
+                    Tech <span>Stack</span>
+                  </h3>
+                </div>
+                <h4
+                  class="text-white font-mono text-xs md:text-sm leading-relaxed max-w-sm text-left md:text-right mt-3 md:mt-0">
+                  Hover across categories to explore technical expertise, toolchains & architectures.
+                </h4>
+              </div>
+
+              <!-- TagSphere Component Container -->
+              <div id="techstack-sphere-wrapper"
+                class="relative w-full flex-1 flex flex-col items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-black/40 backdrop-blur-sm shadow-2xl p-2 md:p-4 min-h-[380px] md:min-h-[440px]">
+                <div id="techstack-sphere"
+                  class="relative w-full h-[360px] md:h-[420px] overflow-visible bg-transparent font-mono text-[#f4f1ea] isolate"
+                  style="--tag-sphere-accent: #ff4d2e;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="education"
+            class="page3 education relative min-h-[90vh] md:h-screen w-full overflow-hidden select-none">
+            <div class="image-div h-screen overflow-hidden w-full absolute inset-0 z-0">
+              <img data-speed="0.5" class="h-screen w-full scale-[1] object-cover" data-src="./Images/Bg-Education.jpg"
+                alt="Education Background" />
+            </div>
+
+            <div
+              class="upperdiv px-[3vw] md:px-[2.5vw] py-[3vw] md:py-[2vw] flex flex-col justify-between h-full w-full absolute z-[20] top-0 left-0">
+              <!-- Header with Tag & Main Heading -->
+              <div
+                class="heading flex flex-col md:flex-row items-start md:items-end justify-between w-full mb-3 md:mb-4">
+                <div>
+                  <h3 class="text-white leading-[1] text-[9vw] md:text-[5vw] font-bold">
+                    Academic <span>Journey</span>
+                  </h3>
+                </div>
+                <h4
+                  class="text-white font-mono text-xs md:text-sm leading-relaxed max-w-sm text-left md:text-right mt-2 md:mt-0">
+                  Scroll through timeline milestones of formal education, creative technologies & foundations.
+                </h4>
+              </div>
+
+              <!-- Sticky Scroll Reveal Container -->
+              <div id="education-sticky-scroll"
+                class="relative w-full flex-1 flex flex-col md:flex-row items-center justify-between overflow-hidden rounded-2xl border border-white/10 bg-black/60 shadow-2xl p-4 md:p-8 min-h-[420px] md:min-h-[460px] max-h-[580px]">
+
+                <!-- Left Scrollable Milestones -->
+                <div id="sticky-scroll-milestones"
+                  class="sticky-scroll-container w-full md:w-[54%] h-[240px] md:h-[400px] overflow-y-auto pr-2 md:pr-6 space-y-12 md:space-y-24 scroll-smooth">
+
+                  <!-- Milestone 0: ITI -->
+                  <div class="sticky-scroll-card-item opacity-100 py-4 cursor-pointer" data-index="0">
+                    <div class="flex items-center gap-2 mb-1.5 text-xs font-mono text-neutral-400">
+                      <span class="text-white font-medium">2022 – 2023</span>
+                      <span>/</span>
+                      <span>Industral Training Institute</span>
+                    </div>
+                    <h2 class="text-white text-2xl md:text-3xl font-bold font-staat tracking-wide">
+                      Diploma in Computer Operator & Programming Assistant - Jhabua
+                    </h2>
+                    <p class="text-neutral-300 text-sm md:text-base mt-2 leading-relaxed max-w-lg">
+                      The Diploma in Computer Operator and Programming Assistant (COPA) is a foundational course
+                      designed to provide students with essential knowledge and practical skills in computer operations,
+                      programming, and office automation. This one-year program focuses on developing proficiency in
+                      computer hardware, software applications, basic programming languages, and internet usage.
+                    </p>
+                  </div>
+
+                  <!-- Milestone 1: Class XII -->
+                  <div class="sticky-scroll-card-item opacity-30 py-4 cursor-pointer" data-index="1">
+                    <div class="flex items-center gap-2 mb-1.5 text-xs font-mono text-neutral-400">
+                      <span class="text-white font-medium">2021 – 2022</span>
+                      <span>/</span>
+                      <span>Senior Secondary</span>
+                    </div>
+                    <h2 class="text-white text-2xl md:text-3xl font-bold font-staat tracking-wide">
+                      Govt High School - Commerce (Class XII)
+                    </h2>
+                    <p class="text-neutral-300 text-sm md:text-base mt-2 leading-relaxed max-w-lg">
+                      The Commerce stream at Government High School, Indore, offers students a solid academic foundation
+                      in business, finance, and economics. This program is designed to equip students with theoretical
+                      and practical knowledge related to trade, accounting, management, and entrepreneurship. The
+                      curriculum follows the guidelines prescribed by the MP Board and emphasizes analytical thinking,
+                      numerical aptitude, and a strong understanding of economic and commercial systems.
+                    </p>
+                  </div>
+
+                  <!-- Milestone 2: Class X -->
+                  <div class="sticky-scroll-card-item opacity-30 py-4 cursor-pointer" data-index="2">
+                    <div class="flex items-center gap-2 mb-1.5 text-xs font-mono text-neutral-400">
+                      <span class="text-white font-medium">2017 – 2018</span>
+                      <span>/</span>
+                      <span>CBSE Secondary </span>
+                    </div>
+                    <h2 class="text-white text-2xl md:text-3xl font-bold font-staat tracking-wide">
+                      Keshav International School - (Class X)
+                    </h2>
+                    <p class="text-neutral-300 text-sm md:text-base mt-2 leading-relaxed max-w-lg">
+                      Class 10 at Keshav International School, affiliated with CBSE, is a crucial academic stage that
+                      lays the foundation for higher secondary education. The curriculum is designed to develop core
+                      competencies across various disciplines including language, science, mathematics, social studies,
+                      and computer applications. The focus is on both scholastic and co-scholastic development through a
+                      balanced and comprehensive learning environment.
+                    </p>
+                  </div>
+
+                  <div class="h-16 md:h-28"></div>
+                </div>
+
+                <!-- Right Sticky Preview Card -->
+                <div class="w-full md:w-[42%] flex items-center justify-center mt-4 md:mt-0">
+                  <div id="sticky-preview-card"
+                    class="relative w-full h-[180px] md:h-[340px] rounded-2xl overflow-hidden shadow-2xl border border-white/20">
+                    <!-- Background border-bg chalkboard image -->
+                    <img src="./Images/border-bg.jpg" alt="Chalkboard Border Background"
+                      class="absolute inset-0 w-full h-full object-cover z-0" />
+
+                    <div class="relative z-10 w-full h-full rounded-xl overflow-hidden">
+                      <img id="sticky-preview-img-0" src="./Images/ITI Education.png" alt="ITI Education"
+                        class="sticky-scroll-preview-img absolute inset-0 w-full h-full object-contain p-4 md:p-6 opacity-100 scale-100" />
+                      <img id="sticky-preview-img-1" src="./Images/Edcation Class 12.png" alt="Class 12"
+                        class="sticky-scroll-preview-img absolute inset-0 w-full h-full object-contain p-4 md:p-6 opacity-0 scale-105" />
+                      <img id="sticky-preview-img-2" src="./Images/Education class 10.png" alt="Class 10"
+                        class="sticky-scroll-preview-img absolute inset-0 w-full h-full object-contain p-4 md:p-6 opacity-0 scale-105" />
+
+                      <!-- Overlay Caption / Badge -->
+                      <div
+                        class="absolute inset-x-0 bottom-0 p-3 md:p-4 bg-gradient-to-t from-black/85 via-black/45 to-transparent flex items-end justify-between">
+                        <div>
+                          <span id="sticky-preview-caption-badge"
+                            class="text-[10px] md:text-xs font-mono text-neutral-300 font-semibold uppercase tracking-wider block">Industral
+                            Training Institute</span>
+                          <span id="sticky-preview-caption-title"
+                            class="text-white text-xs md:text-sm font-medium">Diploma in Computer Operator & Programming
+                            Assistant</span>
+                        </div>
+                        <span class="text-white/60 text-xs font-mono flex items-center gap-1">Verified ↗</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <div id="contact" class="page4 relative h-[80vh] md:h-screen w-full">
+            <div class="image-div h-screen overflow-hidden w-full">
+              <img data-speed="0.99" class="h-screen w-full scale-[1] object-cover" data-src="./Images/footer.png"
+                alt="" />
+            </div>
+            <div class="overview px-[2vw] md:px-[1.5vw] py-[1.5vw] h-[80vh] md:h-screen w-full absolute top-0 left-0">
+              <div class="contactupper h-[85%] md:h-[60%] w-full flex flex-col justify-between">
+                <div class="getintouch h-[20%] md:h-[60%] w-full flex items-center">
+                  <h3 class="text-[10vw] md:text-[6.5vw] text-white">
+                    Get In <span>Touch</span>
+                  </h3>
+                </div>
+                <div
+                  class="socials h-[80%] md:h-[40%] w-full flex md:flex-row flex-col items-start md:items-center justify-between">
+                  <div
+                    class="first flex flex-col justify-between py-[2.5vw] md:py-[0vw] w-full md:w-[30%] h-[32%] md:h-full">
+                    <h4 class="text-white text-[3.8vw] md:text-[1.2vw] leading-[1.18]">
+                      Have a frontend project in mind? Let's build something clean, modern, and interactive together. I
+                      enjoy turning ideas and designs into responsive web experiences.
+                    </h4>
+                    <a href="https://wa.me/+917000094972"
+                      class="buttondiv w-fit border border-white cursor-pointer px-[4vw] md:px-[2vw] py-[1.5vw] md:py-[0.65vw]">
+                      <div
+                        class="links cursor-pointer h-[1.1rem] md:h-[1.35rem] overflow-hidden flex flex-col justify-start">
+                        <h2
+                          class="text-white text-[4vw] md:text-[1.3vw] leading-[1.1rem] md:leading-[1.35rem] shrink-0">
+                          Let's Talk</h2>
+                        <h2
+                          class="text-white text-[4vw] md:text-[1.3vw] leading-[1.1rem] md:leading-[1.35rem] shrink-0">
+                          Let's Talk</h2>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="second flex flex-col justify-between py-[2.5vw] md:py-[0vw] w-full md:w-[30%] h-[32%] md:h-full">
+                    <h4 class="text-white text-[3.8vw] md:text-[1.2vw] leading-[1.18]">
+                      I'm a Frontend Developer focused on building responsive and user-friendly websites using React,
+                      JavaScript, Tailwind CSS, and modern web technologies.
+                    </h4>
+                    <a href="./public/Jeet Dhabhai Resume.pdf" download="Jeet_Dhabhai_Resume.pdf"
+                      class="buttondiv w-fit border border-white cursor-pointer px-[4vw] md:px-[2vw] py-[1.5vw] md:py-[0.65vw] bg-[#242A23]">
+                      <div
+                        class="links cursor-pointer h-[1.1rem] md:h-[1.35rem] overflow-hidden flex flex-col justify-start">
+                        <h2
+                          class="text-white text-[4vw] md:text-[1.3vw] leading-[1.1rem] md:leading-[1.35rem] shrink-0">
+                          Download Resume</h2>
+                        <h2
+                          class="text-white text-[4vw] md:text-[1.3vw] leading-[1.1rem] md:leading-[1.35rem] shrink-0">
+                          Download Resume</h2>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="third flex flex-col justify-between py-[2.5vw] md:py-[0vw] w-full md:w-[30%] h-[32%] md:h-full">
+                    <h4 class="text-white text-[3.8vw] md:text-[1.2vw] leading-[1.18]">
+                      Looking for a frontend developer for your team or project? Feel free to reach out through my
+                      social profiles or send me a message.
+                    </h4>
+                    <div class="socialslink pb-[1vw] flex items-center gap-[2vw]">
+                      <a target="_blank" href="https://www.linkedin.com/in/jd-jeet/"
+                        class="links cursor-pointer h-[1.1rem] md:h-[1.3rem] overflow-hidden">
+                        <h3 class="text-white text-[4.5vw] md:text-[1.5vw] leading-[1]">
+                          LinkedIn
+                        </h3>
+                        <h3 class="text-white text-[4.5vw] md:text-[1.5vw] leading-[1]">
+                          LinkedIn
+                        </h3>
+                      </a>
+                      <a target="_blank" href="https://github.com/jonty-gurjar"
+                        class="links cursor-pointer h-[1.1rem] md:h-[1.3rem] overflow-hidden">
+                        <h3 class="text-white text-[4.5vw] md:text-[1.5vw] leading-[1]">
+                          GitHub
+                        </h3>
+                        <h3 class="text-white text-[4.5vw] md:text-[1.5vw] leading-[1]">
+                          GitHub
+                        </h3>
+                      </a>
+                      <a target="_blank"
+                        href="https://www.instagram.com/jonty_gurjar?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
+                        class="links cursor-pointer h-[1.1rem] md:h-[1.3rem] overflow-hidden">
+                        <h3 class="text-white text-[4.5vw] md:text-[1.5vw] leading-[1]">
+                          Instagram
+                        </h3>
+                        <h3 class="text-white text-[4.5vw] md:text-[1.5vw] leading-[1]">
+                          Instagram
+                        </h3>
+                      </a>
+                      <a target="_blank" href="mailto:jeetdhabhai18@gmail.com"
+                        class="links cursor-pointer h-[1.1rem] md:h-[1.3rem] overflow-hidden">
+                        <h3 class="text-white text-[4.5vw] md:text-[1.5vw] leading-[1]">
+                          Email
+                        </h3>
+                        <h3 class="text-white text-[4.5vw] md:text-[1.5vw] leading-[1]">
+                          Email
+                        </h3>
+                      </a>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contactlower relative flex items-end justify-center text-center h-[15%] md:h-[40%] w-full">
+                <h3 class="text-white leading-[0.5] text-[20vw]">
+                  Jeet <span>Dhabhai</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
